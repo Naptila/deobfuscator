@@ -82,10 +82,6 @@
     </build>
     <repositories>
         <repository>
-            <id>java-deobfuscator-repository</id>
-            <url>https://repo.samczsun.com/repository/java-deobfuscator</url>
-        </repository>
-        <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
         </repository>
@@ -192,6 +188,8 @@
             <groupId>com.javadeobfuscator</groupId>
             <artifactId>javavm</artifactId>
             <version>3.0.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/libs/javavm-3.0.0.jar</systemPath>
         </dependency>
 
         <dependency>
